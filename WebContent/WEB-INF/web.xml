@@ -1,0 +1,31 @@
+<web-app>
+	<display-name>BeginnersBookDemo</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+
+	<servlet>
+		<servlet-name>MyHttpServletDemo</servlet-name>
+		<servlet-class>schServlet1.MyServletDemo</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>MyHttpServletDemo</servlet-name>
+		<url-pattern>/welcome</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ScheduledServletDemo</servlet-name>
+		<servlet-class>schServlet1.DominoTimer</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ScheduledServletDemo</servlet-name>
+		<url-pattern>/runScheduled</url-pattern>
+	</servlet-mapping>
+</web-app>
