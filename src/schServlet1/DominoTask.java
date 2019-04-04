@@ -8,7 +8,7 @@ public class DominoTask extends TimerTask {
 	Thread t = null;
 	Date now;
 	long howLong;
-	String dbName = "Test/Servlets.nsf";
+	String dbName = "Notesdata\\Sandbox\\Scheduled Servlets in\\Servlets.nsf";
 	String formName = "ServletCheck";
 	String viewName = "ServletSetup";
 	String servletName = "DominoTimer";

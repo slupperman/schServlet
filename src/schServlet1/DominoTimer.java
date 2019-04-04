@@ -4,9 +4,10 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import java.util.Timer;
 import lotus.domino.*;
+import lotus.domino.NotesThread;
 
 public class DominoTimer extends HttpServlet {
-	String dbName = "Test/Servlets.nsf";
+	String dbName = "Notesdata\\Sandbox\\Scheduled Servlets in\\Servlets.nsf";
 	String formName = "ServletCheck";
 	String viewName = "ServletSetup";
 	String servletName = "ScheduledServlet";
@@ -44,10 +45,10 @@ public class DominoTimer extends HttpServlet {
 			Database db = session.getDatabase(null, dbName);
 			/* Get current wait time */
 			View view = db.getView(viewName);
-			Document doc1 = view.getDocumentByKey(servletName, true);
-			howLong = new Long(doc1.getItemValueInteger("SleepTime_d")).longValue();
+			Document servletSetup = view.getDocumentByKey(servletName, true);
+			howLong = new Long(servletSetup.getItemValueInteger("SleepTime_d")).longValue();
 			/* Recycle objects */
-			doc1.recycle();
+			servletSetup.recycle();
 			view.recycle();
 			NotesThread.stermThread();
 			System.runFinalization();

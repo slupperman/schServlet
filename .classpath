@@ -13,7 +13,7 @@
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
-	<classpathentry kind="lib" path="C:/App/Jars/Domino/NCSO.jar"/>
-	<classpathentry kind="lib" path="C:/App/Jars/Domino/Notes.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/IBM/Notes/Data/domino/java/NCSO.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/IBM/Notes/jvm/lib/ext/Notes.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

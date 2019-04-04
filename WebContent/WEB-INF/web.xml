@@ -9,16 +9,7 @@
 		<welcome-file>default.jsp</welcome-file>
 	</welcome-file-list>
 
-	<servlet>
-		<servlet-name>MyHttpServletDemo</servlet-name>
-		<servlet-class>schServlet1.MyServletDemo</servlet-class>
-	</servlet>
 
-	<servlet-mapping>
-		<servlet-name>MyHttpServletDemo</servlet-name>
-		<url-pattern>/welcome</url-pattern>
-	</servlet-mapping>
-	
 	<servlet>
 		<servlet-name>ScheduledServletDemo</servlet-name>
 		<servlet-class>schServlet1.DominoTimer</servlet-class>
