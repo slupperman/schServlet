@@ -25,6 +25,8 @@ public class DominoTimer extends HttpServlet {
 		DominoTask dtask = new DominoTask();
 		timer.schedule(dtask, 0, processNotes());
 		out.close();
+
+		System.out.println("hello");
 	}
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
